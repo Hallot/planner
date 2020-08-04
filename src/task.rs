@@ -1,4 +1,4 @@
-enum TaskType {
+pub enum TaskType {
     EEP,
     TAVI,
     CathLab,
@@ -7,16 +7,16 @@ enum TaskType {
     Admin,
 }
 
-struct Task {
+pub struct Task {
     id: u64,
     name: String,
-    type: TaskType,
+    r#type: TaskType,
     day: u32, // Index in the month, starting from 1
     duration: u32, // [h]
     participants_required: u32,
 }
 
-struct Participant {
+pub struct Participant {
     id: u64,
     name: String,
     skills: Vec<TaskType>,
