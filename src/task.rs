@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone, PartialEq)]
 pub enum TaskType {
     EEP,
     TAVI,
@@ -10,18 +10,18 @@ pub enum TaskType {
     Admin,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct Task {
-    r#type: TaskType,
-    day: u32, // Index in the month, starting from 1
-    duration: u32, // [h]
-    participants_required: u32,
+    pub task_type: TaskType,
+    pub day: u32, // Index in the month, starting from 1
+    pub duration: u32, // [h]
+    pub participants_required: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct Participant {
-    name: String,
-    skills: Vec<TaskType>,
-    hours_per_week: u32,
-    days_unavailable: Vec<u32>,
+    pub name: String,
+    pub skills: Vec<TaskType>,
+    pub hours_per_week: u32,
+    pub days_unavailable: Vec<u32>,
 }
