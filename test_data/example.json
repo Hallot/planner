@@ -8,11 +8,11 @@
         { "type": "Admin", "day": 3, "duration": 8, "participants_required": 1 }
     ],
     "staff": [
-        { "id": 1, "skills": ["EEP"], "hours_per_week": 40, "days_unavailable": [2] },
-        { "id": 2, "skills": ["EEP", "TAVI"], "hours_per_week": 32, "days_unavailable": [] },
-        { "id": 3, "skills": ["EEP", "CathLab"], "hours_per_week": 40, "days_unavailable": [1] },
-        { "id": 4, "skills": ["TAVI"], "hours_per_week": 40, "days_unavailable": [3] },
-        { "id": 5, "skills": ["EEP"], "hours_per_week": 24, "days_unavailable": [1, 2] },
-        { "id": 6, "skills": ["EEP", "Admin"], "hours_per_week": 40, "days_unavailable": [] }
+        { "name": "Mikey", "skills": ["EEP"], "hours_per_week": 40, "days_unavailable": [2] },
+        { "name": "Karo", "skills": ["EEP", "TAVI"], "hours_per_week": 32, "days_unavailable": [] },
+        { "name": "Rara", "skills": ["EEP", "CathLab"], "hours_per_week": 40, "days_unavailable": [1] },
+        { "name": "Gertrude", "skills": ["TAVI"], "hours_per_week": 40, "days_unavailable": [3] },
+        { "name": "Jean-Eude", "skills": ["EEP"], "hours_per_week": 24, "days_unavailable": [1, 2] },
+        { "name": "Amélie <3", "skills": ["EEP", "Admin"], "hours_per_week": 40, "days_unavailable": [] }
     ]
 }
